@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexander Rubin — Mechanical Engineer</title>
+  <meta name="description" content="Portfolio of Alexander Rubin, Mechanical Engineer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="about">
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="logo">A.RUBIN<span class="logo-dot">/</span>ME</a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="active">About</a>
+        <a href="work.html">Work</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= VIDEO HERO ================= -->
+    <!--
+      EDIT: drop your own clip in as assets/hero-video.mp4 (a CAD spin, a machine
+      running, a print timelapse — anything ~10-20s that loops cleanly).
+      Until that file exists, the gradient background below shows instead —
+      nothing breaks either way.
+    -->
+    <section class="hero-video-section">
+      <div class="hero-video-bg" aria-hidden="true"></div>
+      <div class="hero-video-overlay"></div>
+      <div class="wrap hero-video-content">
+        <p class="hero-eyebrow">ENGINEERING PORTFOLIO</p>
+        <!-- EDIT: your name -->
+        <h1>Alexander Rubin</h1>
+        <p class="hero-subtitle">Mechanical Engineering</p>
+        <!-- EDIT: your one-line pitch -->
+        <p class="hero-tagline">
+          Thanks for stopping by. Whether you're a recruiter, a fellow engineer,
+          or just lost — I build things, break some of them, and (usually) learn
+          why. Here's a look at the process.
+        </p>
+        <div class="hero-actions">
+          <a href="work.html" class="btn btn-primary">Work Experience</a>
+          <a href="projects.html" class="btn btn-outline">Project Experience</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue">
+        SCROLL
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section wrap" id="about">
+      <h2 class="section-title"><span class="section-num">§ 01</span> About</h2>
+      <!-- EDIT: your bio — keep it casual, this is the personality section -->
+      <p class="about-intro">
+        Hi, I'm Alex. I’m a mechanical engineering graduate from the University of
+        Vermont with hands-on experience in CAD design, embedded systems, and
+        prototyping. I enjoy working between the CAD model and the physical build,
+        where real-world constraints force the design to become smarter, simpler,
+        and more reliable. This site is a record of that process: the projects,
+        the internships, and the work that taught me how engineering actually feels
+        outside the classroom.
+      </p>
+
+      <div class="duo-grid">
+        <div class="duo-card strengths">
+          <h3>Strengths</h3>
+          <ul>
+            <li>Comfortable turning rough ideas into physical systems and working prototypes</li>
+            <li>Strong CAD and design-for-manufacture thinking in SolidWorks and Revit</li>
+            <li>Effective at embedded sensing, prototyping, and iteration under real constraints</li>
+            <li>Enjoys troubleshooting systems and using data to improve performance</li>
+          </ul>
+        </div>
+        <div class="duo-card weaknesses">
+          <h3>Weaknesses</h3>
+          <ul>
+            <li>Occasionally learns a lesson the hard way during the first prototype</li>
+            <li>Can get a little too committed to an idea before testing it in the real world</li>
+            <li>Still occasionally over-thinks a design before the build is done</li>
+            <li>Has a personal grudge against unnecessary complexity in any system</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> Alexander Rubin.</p>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

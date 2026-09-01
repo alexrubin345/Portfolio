@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Alexander Rubin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="projects">
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="logo">A.RUBIN<span class="logo-dot">/</span>ME</a>
+      <nav class="nav" id="nav">
+        <a href="index.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="projects-hero" aria-label="Projects overview">
+      <div class="projects-hero__slides" aria-hidden="true">
+        <div class="projects-hero__slide is-active" style="background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="projects-hero__slide" style="background-image: url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="projects-hero__slide" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80');"></div>
+      </div>
+      <div class="projects-hero__overlay"></div>
+
+      <div class="wrap projects-hero__content">
+        <p class="page-eyebrow">PROJECT EXPERIENCE</p>
+        <h1>Things I've built</h1>
+        <p class="lead">A mix of systems design, embedded sensing, and computational modeling, driven by the goal of solving real engineering problems with measurable results.</p>
+        <a href="#project-list" class="btn btn-primary">Scroll to projects</a>
+      </div>
+
+      <a href="#project-list" class="scroll-prompt" aria-label="Scroll to projects">
+        <span>Scroll down</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12.2l4.6-4.6L18 13l-6 6-6-6 1.4-1.4 4.6 4.6V4z"/></svg>
+      </a>
+    </section>
+
+    <div class="dim-divider" aria-hidden="true"><span></span></div>
+
+    <section id="project-list" class="section wrap">
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-body">
+            <h3>Miniaturized Wireless Temperature Logger for Aquatic Research</h3>
+            <p class="project-desc">
+              Engineered a sub-0.8g wearable sensor designed to continuously monitor underwater temperature with pinpoint accuracy. The system logs measurements every 30 minutes and transmits data wirelessly via RFID, eliminating recovery loss. Achieved ±0.5°C accuracy through algorithmic calibration and chamber validation, integrating a microcontroller, precision sensor, and embedded antenna into a form factor small enough for vulnerable aquatic species.
+            </p>
+            <dl class="spec-row">
+              <div><dt>Tools</dt><dd>SolidWorks, Arduino, C++, RFID, sensing</dd></div>
+              <div><dt>Duration</dt><dd>Aug 2025 – May 2026</dd></div>
+              <div><dt>Role</dt><dd>Lead designer</dd></div>
+            </dl>
+          </div>
+
+          <div class="project-media" aria-label="Project media carousel">
+            <div class="project-media-label">SENSING</div>
+            <div class="project-media-carousel" data-carousel>
+              <div class="media-slide is-active">
+                <img src="https://images.unsplash.com/photo-1517430816045-df4b8defdbb0?auto=format&fit=crop&w=1200&q=80" alt="Sensor prototype close-up" />
+              </div>
+              <div class="media-slide">
+                <img src="https://images.unsplash.com/photo-1532187643603-ba119ca4109e?auto=format&fit=crop&w=1200&q=80" alt="Test setup and instrumentation" />
+              </div>
+              <div class="media-slide">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Field data capture and analysis" />
+              </div>
+              <button class="media-nav media-prev" aria-label="Previous image">‹</button>
+              <button class="media-nav media-next" aria-label="Next image">›</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-body">
+            <h3>Autonomous Navigation & Robotic Manipulation System</h3>
+            <p class="project-desc">
+              Developed a fully autonomous robot capable of real-time environmental perception and adaptive task execution. Implemented navigation algorithms with ultrasonic sensing for obstacle detection and dynamic path planning. Designed and fabricated a multi-degree-of-freedom arm mechanism with adjustable reach, optimizing workspace coverage and dexterity. System achieved 100% task completion in competition by integrating perception, planning, and control across both mobility and manipulation subsystems.
+            </p>
+            <dl class="spec-row">
+              <div><dt>Tools</dt><dd>Arduino, C++, SolidWorks</dd></div>
+              <div><dt>Duration</dt><dd>Apr 2025 – May 2025</dd></div>
+              <div><dt>Role</dt><dd>Systems + design</dd></div>
+            </dl>
+          </div>
+
+          <div class="project-media" aria-label="Project media carousel">
+            <div class="project-media-label">AUTONOMY</div>
+            <div class="project-media-carousel" data-carousel>
+              <div class="media-slide is-active">
+                <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1200&q=80" alt="Robotics prototype and assembly" />
+              </div>
+              <div class="media-slide">
+                <img src="https://images.unsplash.com/photo-1564865878688-9a244444042a?auto=format&fit=crop&w=1200&q=80" alt="Robot drivetrain and electronics" />
+              </div>
+              <div class="media-slide">
+                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1200&q=80" alt="Robot manipulator in action" />
+              </div>
+              <button class="media-nav media-prev" aria-label="Previous image">‹</button>
+              <button class="media-nav media-next" aria-label="Next image">›</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-body">
+            <h3>Artemis II RS-25 Engine Performance</h3>
+            <p class="project-desc">
+              Conducted comprehensive computational fluid dynamics analysis of the RS-25 rocket engine across three expansion ratio configurations, leveraging actual Artemis II mission data. Built validated ANSYS Fluent models capturing chamber thermodynamics, nozzle flow expansion, and atmospheric interaction. Study focused on transient plume development and thermal-structural efficiency, providing insights into engine performance under realistic launch conditions and validating design margins for future missions.
+            </p>
+            <dl class="spec-row">
+              <div><dt>Tools</dt><dd>ANSYS Fluent, CFD, Python</dd></div>
+              <div><dt>Duration</dt><dd>Apr 2026</dd></div>
+              <div><dt>Role</dt><dd>Analyst</dd></div>
+            </dl>
+          </div>
+
+          <div class="project-media" aria-label="Project media carousel">
+            <div class="project-media-label">CFD</div>
+            <div class="project-media-carousel" data-carousel>
+              <div class="media-slide is-active">
+                <video controls playsinline muted>
+                  <source src="./assets/AR50Video.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="media-slide">
+                <video controls playsinline muted>
+                  <source src="./assets/AR69Video.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="media-slide">
+                <video controls playsinline muted>
+                  <source src="./assets/AR80Video.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <button class="media-nav media-prev" aria-label="Previous media">‹</button>
+              <button class="media-nav media-next" aria-label="Next media">›</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> Alexander Rubin.</p>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
