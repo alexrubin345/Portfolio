@@ -43,6 +43,7 @@ document.querySelectorAll('[data-carousel]').forEach((carousel) => {
   const slides = [...carousel.querySelectorAll('.media-slide')];
   const prevButton = carousel.querySelector('.media-prev');
   const nextButton = carousel.querySelector('.media-next');
+  const mediaLabel = carousel.closest('.project-media')?.querySelector('.project-media-label');
 
   if (!slides.length) return;
 
@@ -53,6 +54,9 @@ document.querySelectorAll('[data-carousel]').forEach((carousel) => {
     slides.forEach((slide, i) => {
       slide.classList.toggle('is-active', i === activeIndex);
     });
+
+    const activeImage = slides[activeIndex].querySelector('img');
+    if (mediaLabel && activeImage) mediaLabel.textContent = activeImage.alt;
 
     slides.forEach((slide) => {
       const video = slide.querySelector('video');
