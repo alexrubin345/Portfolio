@@ -55,8 +55,10 @@ document.querySelectorAll('[data-carousel]').forEach((carousel) => {
       slide.classList.toggle('is-active', i === activeIndex);
     });
 
-    const activeImage = slides[activeIndex].querySelector('img');
-    if (mediaLabel && activeImage) mediaLabel.textContent = activeImage.alt;
+    const activeSlide = slides[activeIndex];
+    const activeImage = activeSlide.querySelector('img');
+    const activeLabel = activeSlide.dataset.label || activeImage?.alt;
+    if (mediaLabel && activeLabel) mediaLabel.textContent = activeLabel;
 
     slides.forEach((slide) => {
       const video = slide.querySelector('video');
