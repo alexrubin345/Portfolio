@@ -8,6 +8,136 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .gallery-lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      animation: fadeIn 0.3s;
+    }
+
+    .gallery-lightbox.active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox-content {
+      position: relative;
+      max-width: 90%;
+      max-height: 90%;
+      overflow: auto;
+    }
+
+    .lightbox-content iframe,
+    .lightbox-content img {
+      width: 100%;
+      height: auto;
+      max-height: 85vh;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1001;
+      transition: color 0.3s;
+    }
+
+    .lightbox-close:hover {
+      color: #ccc;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .blueprint-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .blueprint-card {
+      border: 2px solid #007bff;
+      border-radius: 8px;
+      overflow: hidden;
+      background: linear-gradient(135deg, #f8f9ff 0%, #e8f0ff 100%);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blueprint-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 123, 255, 0.2);
+    }
+
+    .blueprint-thumbnail {
+      width: 100%;
+      height: 200px;
+      background: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      border-bottom: 2px solid #007bff;
+    }
+
+    .blueprint-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .blueprint-image:hover {
+      transform: scale(1.02);
+    }
+
+    .blueprint-info {
+      padding: 1.5rem 1rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blueprint-title {
+      font-weight: 700;
+      color: #1a1a1a;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .blueprint-desc {
+      font-size: 0.9rem;
+      color: #666;
+      flex-grow: 1;
+    }
+
+    .blueprint-cta {
+      margin-top: 1rem;
+      color: #007bff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  </style>
 </head>
 <body data-page="work">
 
@@ -63,6 +193,25 @@
               infrastructure, reducing downtime through root-cause troubleshooting and rapid repair.
               Conducted daily water-quality testing to maintain health compliance and support successful inspections.
             </p>
+            <div class="blueprints-section" style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #e0e0e0;">
+              <h4 style="margin-bottom: 1.5rem; font-size: 0.95rem; color: #666;">Camp Facility Blueprints</h4>
+              <div class="blueprint-gallery-grid">
+                <div class="blueprint-card">
+                  <img src="assets/Cayuga_Blueprint.png" alt="Cayuga Blueprint" class="blueprint-image">
+                  <div class="blueprint-info">
+                    <div class="blueprint-title">Cayuga Blueprint</div>
+                    <div class="blueprint-desc">Revit structural blueprint</div>
+                  </div>
+                </div>
+                <div class="blueprint-card">
+                  <img src="assets/Seneca_Blueprint.png" alt="Seneca Blueprint" class="blueprint-image">
+                  <div class="blueprint-info">
+                    <div class="blueprint-title">Seneca Blueprint</div>
+                    <div class="blueprint-desc">Revit structural blueprint</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </li>
       </ol>
