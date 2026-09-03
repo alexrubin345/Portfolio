@@ -393,6 +393,31 @@ body[data-page="resume"] .btn-primary:hover {
 .about-intro { font-size: 1.1rem; color: var(--color-ink-soft); max-width: 70ch; margin: 0 0 40px; }
 .about-intro strong { color: var(--color-ink); }
 
+.hobbies-section { border-top: 1px solid var(--color-line); }
+.hobbies-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.hobby-card {
+  overflow: hidden;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+}
+.hobby-photo {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: repeating-linear-gradient(135deg, var(--color-bg-alt), var(--color-bg-alt) 10px, var(--color-bg) 10px, var(--color-bg) 20px);
+  color: var(--color-ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.hobby-photo img { width: 100%; height: 220px; object-fit: cover; display: block; }
+.hobby-card-content { padding: 20px; }
+.hobby-card h3 { margin-bottom: 8px; }
+.hobby-card p { margin: 0; color: var(--color-ink-soft); }
+
 .duo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
 .duo-card {
   background: var(--color-surface);
@@ -927,6 +952,7 @@ body[data-page="projects"] .videos-section-fullscreen {
    ========================================================= */
 @media (max-width: 900px) {
   .duo-grid { grid-template-columns: 1fr; }
+  .hobbies-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .project-card { flex-direction: column; }
   .project-media {
